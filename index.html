@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+    <meta charset="utf-8">
+
+    <title>Kamil Budzik - Kalkulator NWD</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/frontend.js" type="text/javascript"></script>
+    <script src="js/calc.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header style="margin-bottom: 3rem">
+        <h1>Podaj współczynniki A, B, C, aby odneleźć x, y, z, dla których:</h1>
+    </header>
+    <label id="general-equation"> <b>A</b> x + <b>B</b>y, <b>C</b>z = (A, B, C)</label>
+
+    <label for="number-A" style=" display:flex; flex-direction: row">
+        <p> A</p>
+        <input id="number-A" maxlength="10" type="text" style=" margin: 1rem" />
+    </label>
+
+    <label for="number-B" style=" display:flex; flex-direction: row">
+        <p> B </p>
+        <input id="number-B" maxlength="10" type="text" style=" margin: 1rem" />
+    </label>
+
+    <label style=" display:flex; flex-direction: row;" for="number-C" >
+        <p> C </p>
+        <input id="number-C" maxlength="10" type="text" style=" margin: 1rem" />
+    </label>
+
+    <button class="btn blue ripple" onclick="buttonClick()">OBLICZ</button>
+
+    <p><label id="equation"></label></p>
+
+    <div id="result"></div>
+    <header>
+        <p style="font-size:15px; margin-top: 5rem">Wykonanie: Kamil Budzik</p>
+    </header>
+</body>
+</html>
